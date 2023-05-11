@@ -1,37 +1,20 @@
-// Any changes in function of value of variable can not change it 
-// it is call by value 
-
 class ArrayDemo{
 
-	static void fun(int x, int y){
-		
-		System.out.println(x); 
-		System.out.println(y); 
-	
-		x=x+10;
-		y=y+10;
-
-		System.out.println(x); 
-		System.out.println(y); 
-		
-	}
 	public static void main(String[] args){
 	
-		int x = 10;
-		int y = 20;
-
-		System.out.println(x); 
-		System.out.println(y); 
+		int arr1[] ={10,20,400};
+		int arr2[] ={10,20,400};
+		Integer arr3[] ={10,20,400};
 		
-		fun(x,y);
-
-		System.out.println(x); 
-		System.out.println(y); 
-	
-	
-	
+		System.out.println(System.identityHashCode(arr1[0]));  //100
+		System.out.println(System.identityHashCode(arr2[0]));  //100
+		System.out.println(System.identityHashCode(arr3[0]));  //100
+		System.out.println(System.identityHashCode(arr1[1]));  //200
+		System.out.println(System.identityHashCode(arr2[1]));  //200
+		System.out.println(System.identityHashCode(arr3[1]));  //200
+		System.out.println(System.identityHashCode(arr1[2]));  //300
+		System.out.println(System.identityHashCode(arr2[2]));  //400
+		System.out.println(System.identityHashCode(arr3[2]));  //500
 	
 	}
-
-
 }

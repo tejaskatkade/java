@@ -1,16 +1,24 @@
+// Passing an array as an argument
+
 class ArrayDemo{
 
+	static void fun(int A[]){
+	
+		for(int i=0; i<A.length; i++)
+			A[i] = A[i] + 100;
+	}
 	public static void main(String[] args){
 	
-		ArrayDemo obj = new ArrayDemo();
+		int arr[] = {10,20,30,40,50};
 
-		int ret = obj.fun(10);
-		System.out.println(ret);  // 60;
-	}
+		for(int x : arr)
+			System.out.println(x);
 
-	int fun(int x){
-	
-		int val = x+50;
-		return val;	
+		fun(arr);
+		
+		for(int x : arr)
+			System.out.println(x);
+
+
 	}
 }

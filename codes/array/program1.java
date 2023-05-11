@@ -1,19 +1,20 @@
+// Passing an array as an argument
+
 class ArrayDemo{
 
-	public static void main(String args[]){
+	static void fun(int A[]){
 	
-		int arr1[]={1,2,3,4,5,6};
-		float arr2[]={1,2,3,4,5,6};
-		double arr3[]={1,2,3,4,5,6};
-		
-	//	float arr4[]={10.5,20.5,30.5,40.5,50.5,60.5}; //error
-		
+		for(int x : A)
+			System.out.println(x);
+	}
+	public static void main(String[] args){
+	
+		int arr[] = {10,20,30,40,50};
 
+		for(int x : arr)
+			System.out.println(x);
 
+		fun(arr);
 
-
-		for(int i=0;i<arr4.length;i++){
-			System.out.println(arr4[i]);
-		}
 	}
 }
