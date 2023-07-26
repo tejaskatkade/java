@@ -11,7 +11,7 @@ class StringDemo{
 		String str3 = "TejasKatkade";        // 300
 		String str4 = str1 + str2;           // 400
 
-		// str1 + str2  is concat method so new object is created.
+		// str1 + str2  is append method of string builder class so new object is created.
 		// concat is the method of String class
 		    
 

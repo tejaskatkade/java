@@ -6,8 +6,8 @@ class ArrayDemo{
 		int x = 65;
 
 		
-		System.out.println(System.identityHashCode(ch));
-		System.out.println(System.identityHashCode(x));
+		System.out.println(System.identityHashCode(ch)); // 1234
+		System.out.println(System.identityHashCode(x));  // 4575
 
 
 	}
