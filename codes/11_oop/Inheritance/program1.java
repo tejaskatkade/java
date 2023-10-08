@@ -14,7 +14,7 @@ class Parent{
 class Child extends Parent{
 
 	Child(){
-		System.out.println("In childe constructor");
+		System.out.println("In child constructor");
 	}
 }
 class Client{
@@ -25,3 +25,7 @@ class Client{
 		obj.parentProperty();
 	}
 }
+
+// In parent Constructor
+// In child constructor
+// Flat, Car, Property
