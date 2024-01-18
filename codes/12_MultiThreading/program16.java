@@ -2,12 +2,12 @@
 
 class MyThread extends Thread{
 
-	MyThread(ThreadGroup tG, String str){
+	public MyThread(ThreadGroup tG, String str){
 		super(tG,str);
 	}
 
 	public void run(){
-		System.out.println(getName());
+		System.out.println(getName()+" | "+currentThread());
 	}
 }
 class ThreadDemo{

@@ -17,13 +17,16 @@ class ArrayListDemo{
 		for(Object obj: al){
 			System.out.println(obj);
 		}
-		
-	/*	for(Integer obj: al){
-			System.out.println(obj);
-		}
-*/
+
 		for(var obj: al){
 			System.out.println(obj);
 		}
+
+/*
+		for(Integer obj: al){
+			System.out.println(obj);
+		}
+		*/
+
 	}
 }

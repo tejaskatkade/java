@@ -16,7 +16,7 @@ class Client{
 		Demo obj = new Demo();
 		obj.fun("Core2web");
 		obj.fun(new StringBuffer("Core2Web"));
-		obj.fun(null);  //ambiguity
+//		obj.fun(null);  //ambiguity
 	}
 }
 
