@@ -20,5 +20,9 @@ class Client{
 	}
 }
 
+//  ouput
+// String
+// StringBuffer
+
 //string str = null;
 //StringBuffer str = new StringBuffer(null);

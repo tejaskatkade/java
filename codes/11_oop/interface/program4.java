@@ -1,6 +1,7 @@
 // From java 1.8v java allowed to write  body to interface
 // static and default <- these keywords are use
-
+// default : use when you want to override that method
+// static : use when you do not want to override that method
 
 
 interface Demo1{

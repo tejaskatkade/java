@@ -28,7 +28,7 @@ class Client{
 	
 		Parent obj = new Child();
 		obj.fun();
-		obj.gun();
+		//obj.gun();
 	}
 }
 /*

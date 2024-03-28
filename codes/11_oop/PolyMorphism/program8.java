@@ -27,7 +27,7 @@ class Client{
 	public static void main(String[] args){
 	
 		Parent obj = new Child();
-		obj.fun(10);
+		//obj.fun(10);
 	
 	}
 }
