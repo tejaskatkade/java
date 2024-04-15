@@ -11,7 +11,7 @@ public class Sorted {
     }
     public static void main(String[] args) {
         
-        int[] arr ={1,3,5,6,4,12,15};
+        int[] arr ={1,3,5,6,12,15};
         System.out.println(isSorted(arr,0));
     }
 }
