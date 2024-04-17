@@ -7,18 +7,22 @@ import java.util.TreeSet;
 // Duplicates are not allowed 
 // Insertion order is not preserved but based on some sorting order
 // Heterogenous objects are not allowed else we get ClassCastException
-// Null insertion is possible only once;
+// Null insertion is no more supporting;
 
 
 public class TreeSetDemo {
     public static void main(String[] args) {
-        TreeSet ts = new TreeSet();
+        TreeSet<String> ts = new TreeSet<>();
         ts.add("tejas");
         ts.add("yash");
         ts.add("prem");
 
         System.out.println(ts);
         //[prem, tejas, yash]
+        // Default sorting order
+        // as we are depend on default natural sorting order the object should be Homogenous and Comaprable (corresponding class implements comparable interface)
+
+        
 
         TreeSet ts1 = new TreeSet<>();
         //ts1.add(null); // null pointer exception
@@ -27,7 +31,7 @@ public class TreeSetDemo {
         // ts1.add("tk"); // ClassCastException
 
         TreeSet tree = new TreeSet<>();
-        tree.add(null);
+        //tree.add(null); // NullPointerException
     }
     
 }
